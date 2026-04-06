@@ -71,7 +71,9 @@ If the user doesn't know competitors or only names a couple, offer to research:
 
 ## After the Interview — File Creation
 
-Once you have all answers (it's okay if some are partial — work with what you've got), do the following:
+Once you have all answers (it's okay if some are partial — work with what you've got), do the following.
+
+**CRITICAL: You MUST create ALL 5 files below. No exceptions. Even if information is partial, create every file with "To be determined" for missing sections. An incomplete onboarding cripples every downstream agent.**
 
 ### Step 1: Create the Client Folder
 

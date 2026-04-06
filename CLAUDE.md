@@ -23,13 +23,15 @@ When the user says any of these, follow the instructions:
 | `workflow [name]` | Read and execute `workflows/[name].md` |
 | `dashboard` | Generate the agency dashboard from `vault/00-Dashboard/` |
 | `roi` | Update and show the ROI tracker |
+| `run research` | Run the Research team — deep market, competitor, product, or company research |
 | `watch competitors` | Run the competitive intelligence autopilot |
 | `qa [file]` | Run quality gate on a deliverable |
-| `list teams` | Show all 7 teams and their agents |
+| `save credits` | Show credit-saving tips from `tools/credit-saving.md` |
+| `list teams` | Show all 8 teams and their agents |
 | `list workflows` | Show all available workflow chains |
 | `status` | Show current client, active campaigns, recent work |
 
-## The 7 Teams
+## The 8 Teams
 
 ### 1. Marketing Team (60 agents)
 **Lead:** `agents/marketing/_lead.md`
@@ -51,11 +53,15 @@ When the user says any of these, follow the instructions:
 **Lead:** `agents/content/_lead.md`
 **Agents:** Blog Writer, Copywriter, Social Content Writer, Newsletter Writer, Video Scriptwriter, Podcast Scriptwriter, Whitepaper Writer, Content Repurposer, Content Calendar Planner, Performance Analyst
 
-### 6. Direction Team (4 agents)
+### 6. Research Team (8 agents)
+**Lead:** `agents/research/_lead.md`
+**Agents:** Market Analyst, Competitor Deep Diver, Product Researcher, Company Profiler, Industry Scanner, Customer Researcher, Technology Scout, Research Compiler
+
+### 7. Direction Team (4 agents)
 **Lead:** `agents/direction/_lead.md`
 **Agents:** Goal Setter, Priority Manager, Vision Aligner, Decision Maker
 
-### 7. Managing Team (4 agents)
+### 8. Managing Team (4 agents)
 **Lead:** `agents/managing/_lead.md`
 **Agents:** Task Coordinator, Quality Reviewer, Progress Reporter, Cross-team Coordinator
 
@@ -121,7 +127,7 @@ Every deliverable MUST pass through quality checks before delivery:
 3. Verify factual accuracy (claims must have sources)
 4. Check tone alignment with target audience
 5. Ensure completeness (no placeholder text, no TODOs)
-6. Format correctly using the template from `templates/`
+6. Format using the template from `templates/` when available (templates are recommended, not mandatory — if freeform produces better quality, use freeform)
 
 ## Output Organization
 
@@ -151,6 +157,17 @@ Track everything in `vault/00-Dashboard/ROI Tracker.md`:
 - Campaigns planned
 - Proposals written
 - Estimated agency cost savings (industry rate: $150/hr)
+
+## Credit Efficiency Rules
+
+This agency is optimized for Claude Pro users:
+
+1. **Load agents on demand** — Only read the agent file needed for the current task, never bulk-load
+2. **Reuse vault research** — Before researching, check if the vault already has relevant data
+3. **Batch bulk content** — Generate all social posts, all emails, or all blog posts in one pass, not one at a time
+4. **Be terse in responses** — Deliver the work, not paragraphs explaining the work. Skip preamble, skip summaries unless asked
+5. **Use templates** — Pre-structured output = fewer thinking tokens
+6. **Credit guide** — See `tools/credit-saving.md` for full optimization tips
 
 ## Important Rules
 
